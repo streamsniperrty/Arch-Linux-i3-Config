@@ -1,9 +1,22 @@
+# Install i3gaps for Ubuntu
+# sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libsnack2-dev libxcb-shape0-dev autoconf libev-dev build-essential git
+# git clone https://www.github.com/Airblader/i3 i3-gaps
+# cd i3-gaps
+# autoreconf --force --install
+# rm -rf build/
+# mkdir -p build && cd build/
+# ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+# make && sudo make install
+
 #Set the font at the beginning of config page. Default is font pango:monospace 8
 font pango:roboto 8
 
 # Change $mod+d (dmenu) to command below
 # Install rofi using sudo apt-get rofi
 bindsym $mod+d exec rofi -show run
+
+gaps inner 10
+gaps outer 5
 
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
@@ -35,3 +48,5 @@ bar {
 
 # Install feh using sudo apt-get feh
 exec_always feh --bg-scale /home/labibmahmud/Downloads/calm-body-of-water-1363876.jpg
+# Disable title bars to use i3gaps perfectly
+new_window pixel 0
