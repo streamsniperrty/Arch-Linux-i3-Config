@@ -47,6 +47,9 @@ bar {
 }
 
 # Install feh using sudo apt-get feh
-exec_always feh --bg-scale /home/labibmahmud/Downloads/calm-body-of-water-1363876.jpg
+exec_always feh --bg-scale /home/labibmahmud/Pictures/picture.jpg
+# Install compton for fade
+# Might not work, worked for me once
+exec_always compton -f
 # Disable title bars to use i3gaps perfectly
 new_window pixel 0
