@@ -1,3 +1,4 @@
+font pango:roboto 8
 # Change $mod+d (dmenu) to command below
 # Install rofi using sudo pacman -S rofi
 bindsym $mod+d exec rofi -show run
