@@ -34,3 +34,5 @@ bar {
 
 # Install feh using sudo pacman -S feh
 exec_always feh --bg-scale /home/labibmahmud/Downloads/calm-body-of-water-1363876.jpg
+exec /usr/bin/compton --config /home/labibmahmud/.compton.conf
+new_window pixel 0
