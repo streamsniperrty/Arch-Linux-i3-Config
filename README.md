@@ -15,3 +15,5 @@ To install i3-gaps on Arch, install using the pacman manager or AUR.
 **CONFIGURING I3**
 
 Copy the file named `config` into your i3 config folder, which is `~/.config/i3`.
+
+If there is no bar by default, it's because I use multiple bars. The config file uses tint2. Change tint2 to the panel of your choice.
